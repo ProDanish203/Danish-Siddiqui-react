@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { contactImg } from '../Assets';
+import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
   const [form, setForm] = useState({
@@ -7,6 +9,7 @@ export const Contact = () => {
     email: "",
     message: "",
   })
+  const formRef = useRef();
 
   const [loading, setLoading] = useState(false);
 
@@ -15,9 +18,33 @@ export const Contact = () => {
     setForm({...form, [name]: value})
   }
 
-  const handleSubmit = (e) => {
+  const serviceId =  "service_bg65x0d";
+  const templateId = "template_m2dlv8n";
+  const publicKey = "6wBqthpMqYBlmxOLU";
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
+    if(!form.name) return toast.error("Name is required");
+    if(!form.email) return toast.error("Email is required");
+    if(!/^[A-Z0-9._%+-@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)) return toast.error("Invalid Email Address");
+    if(!form.message) return toast.error("Message is required");
+    try{
+      setLoading(true);
+      emailjs.sendForm(serviceId, templateId, formRef.current, publicKey)
+      .then((result) => {
+          toast.success("Your message has been sent")
+      }, (error) => {
+          toast.error("Something went wrong");
+      });
+      setForm({
+        name: "",
+        email: "",
+        message: ""
+      })
+      setLoading(false);
+    }catch(error){
+      setLoading(false);
+    }
   }
 
   return (
@@ -37,6 +64,7 @@ export const Contact = () => {
       <h2 className="text-white xs:text-[35px] text-[30px] font-bold">Contact Me</h2>
 
         <form
+        ref={formRef}
         onSubmit={handleSubmit}
         className='mt-2 flex flex-col gap-5'
         >
@@ -48,7 +76,6 @@ export const Contact = () => {
             value={form.name}
             onChange={handleChange}
             placeholder='Enter Name'
-            required
             autoComplete='off'
             className='bg-bgPrimary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none md:text-md text-sm border-none font-medium'
             />
@@ -62,7 +89,6 @@ export const Contact = () => {
             value={form.email}
             onChange={handleChange}
             placeholder='Enter Email Address'
-            required
             autoComplete='off'
             className='bg-bgPrimary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none md:text-md text-sm border-none font-medium'
             />
@@ -74,7 +100,6 @@ export const Contact = () => {
             rows={7} 
             name='message'
             value={form.message}
-            required
             autoComplete='off'
             onChange={handleChange}
             placeholder='What do you want to say?'

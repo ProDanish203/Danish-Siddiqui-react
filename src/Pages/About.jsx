@@ -18,11 +18,10 @@ export const About = () => {
           <h2 className='text-3xl text-white font-semibold'>About Me</h2>
 
           <p className='text-white mt-5 text-[17px]' data-aos="fade-up" data-aos-delay="500" data-aos-duration="900">
-            I am a senior <span className="text-contrast">Front-End Web Developer</span>. I am an experienced web developer, i've developed a number of apps and interactive web pages 
-             I have good commands on the new and advanced technologied such as <span className="text-contrast">HTML 5, CSS 3, JS</span> and front-end frame works such as  <span className='text-contrast'>react</span>.
+            I am a skilled Full-Stack Web Developer with over 2 years of experience, currently pursuing a Bachelor's degree in Computer Science at Bahria University Karachi, Pakistan. Fluent in both English and Urdu, I possess effective communication skills that allow me to articulate technical concepts effortlessly and work seamlessly with diverse teams and clients. My passion for web development and academic pursuits drive me to create innovative solutions that deliver exceptional user experiences.
           </p>
 
-          <div className="sub-heading text-contrast font-semibold text-xl my-3 mt-5">Socials:</div>
+          <div className="sub-heading text-white font-semibold text-xl my-3 mt-5">Socials:</div>
 
           <div className="social-cards mt-5 flex items-center flex-wrap md:gap-4 gap-2">
             

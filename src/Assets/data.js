@@ -38,38 +38,38 @@ export const navLinks = [
 export const projectData = [
     {
         img: reactEcom,
-        title: "React Ecommerce",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus option",
+        title: "Ecommerce Landing Page",
+        desc: "An Ecommerce Landing page built with React that display the store information and product listings with filters and with responsive, eye-catching design for better UI/UX expereince.",
         link: "https://pyzonecom.web.app/"
     },
     {
         img: portfolioLandingPage,
         title: "Landing Page",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus option",
+        desc: "A Portfolio landing page with great and smooth animations to display a person or bussines's information, built from scratch with HTML,CSS and Js",
         link: "https://prodanish203.github.io/portfolioHeroSectionCSS/"
     },
     {
         img: rockPaperScissors,
         title: "Rock Paper Scissors",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus option",
+        desc: "A Rock Paper Scissors game prototpe built on React, where user can play with computer and the score updates ontime. Design inspiration from the FrontEndMentors",
         link: "https://prodanish203.github.io/rockPaperScissorsReact/"
     },
     {
         img: summarizerDS,
         title: "SummarizerDS",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus option",
+        desc: "A React AI Application that takes url of any blog or article as an input from the user then creates a summmary for the article itself using Artificial Intelligence",
         link: "https://summarizerds.web.app/"
     },
     {
         img: pyzon,
         title: "Pyzon Ecommerce",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus option",
+        desc: "A branded ecommerce store landing page built from scratch with dark mode functionality and responsive, eye-catching design using grids and flexbox.",
         link: "https://prodanish203.github.io/PyZon/"
     },
     {
         img: portfolio,
         title: "Portfolio Website",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus option",
+        desc: "A complete portfolio website that showcases the bussiness and person's information and details with responsive and interactive design, bult from scratch.",
         link: "https://uzairfaseeh-d3959.web.app/"
     }
 ]
@@ -78,17 +78,17 @@ export const projectData = [
 export const servicesData = [
     {
         title: "Full-stack Development",
-        desc: "jkashdfjkhajkhajkcbhjasxcjhgajhbaxc hagsdhjkbc uashdjk hkajshdjkb ui ashduo asjhd ashas uas uasas d aa u a a asuhjashjkh",
+        desc: "I offer comprehensive Full-Stack Web Development services, creating modern and engaging websites and applications. With expertise in frontend and backend technologies, I deliver seamless user experiences and efficient functionality to meet your unique business needs.",
         img: responsive 
     },
     {
         title: "Web Design",
-        desc: "jkashdfjkhajkhajkcbhjasxcjhgajhbaxc hagsdhjkbc uashdjk hkajshdjkb ui ashduo asjhd ashas uas uasas d aa u a a asuhjashjkh",
+        desc: "As a Frontend Web Developer, I specialize in crafting responsive and visually captivating designs that adapt flawlessly across all devices. My focus on user-centric experiences ensures your website leaves a lasting impression on visitors.",
         img: webDesign 
     },
     {
         title: "SEO Optimization",
-        desc: "jkashdfjkhajkhajkcbhjasxcjhgajhbaxc hagsdhjkbc uashdjk hkajshdjkb ui ashduo asjhd ashas uas uasas d aa u a a asuhjashjkh",
+        desc: "I specialize in building web applications that achieve SEO optimization, ensuring your digital presence ranks higher and attracts a broader audience. With a strategic approach and technical expertise, I enhance your online visibility and drive organic traffic to your platform.",
         img: seo 
     }
 ]

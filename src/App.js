@@ -4,6 +4,8 @@ import 'aos/dist/aos.css';
 import { Header, Footer } from './Components';
 import { About, Skills,  Contact, Home, Projects,Services } from "./Pages";
 import { useEffect } from 'react';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
   return (
     <>
     <div className="container w-screen min-h-screen">
+      <ToastContainer/>
       <div className="hero w-screen min-h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat">
 
         <Header/>
