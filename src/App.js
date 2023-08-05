@@ -29,15 +29,10 @@ function App() {
 
   return (
   <>
-  {
-    loading ? (
-    <>
-      <div>
-        <Loading/>
-      </div>
-    </>
-    ) : (
-    <>
+    <div className={`${loading ? "": "hide-loader"}`}>
+      <Loading/>
+    </div>
+
     <div className="container w-screen min-h-screen">
       <ToastContainer/>
       <div className="hero w-screen min-h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat">
@@ -62,11 +57,6 @@ function App() {
       </div>
 
     </div>
-    </>
-    )
-  }
-  
-
   
   </>
   );

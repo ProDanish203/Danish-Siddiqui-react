@@ -9,9 +9,9 @@ export const Header = () => {
 
   return (
     <>
-    <header className={`fixed ${navbar && "bg-bgPrimary"} bg-bgPrimary shadow-2xl z-40 py-4 md:px-20 px-10 w-screen flex items-center justify-between`}>
+    <header className={`fixed ${navbar && "bg-bgPrimary"} bg-bgPrimary shadow-2xl overflow-hidden z-40 py-4 md:px-20 px-10 w-screen flex items-center justify-between`}>
 
-        <div className="logo text-white font-bold" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">    
+        <div className="logo text-white font-bold" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1000">    
         {/* eslint-disable-next-line */}
             <a href="#">
             <img src={logo} className='md:w-[120px] w-[100px] cursor-pointer' alt="logo" />
@@ -22,7 +22,7 @@ export const Header = () => {
         className={`menu-btn ${navbar && 'active'} bg-transparent text-white hover:text-contrast text-[18px]`}
         onClick={() => {setNavbar(prev => !prev)}}
         data-aos="fade-up"
-        data-aos-edlay="300"
+        data-aos-delay="1800"
         data-aos-duration="1000"
         >
             <span 
