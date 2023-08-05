@@ -1,5 +1,6 @@
 import React from 'react'
 import { me2 } from "../Assets";
+import resume from "../Assets/resume.pdf";
 
 export const Home = () => {
   return (
@@ -18,8 +19,13 @@ export const Home = () => {
           <p className='text-white mt-5 text-md' data-aos="fade-up" data-aos-delay="500" data-aos-duration="900">
           As a Senior <span className='text-contrast'>Full-Stack Developer</span>, I excel in the MERN stack and possess expertise in React, Node.js, and other web technologies. I am dedicated to crafting cutting-edge web solutions that seamlessly merge backend functionality with visually striking frontend designs.
           </p>
-
-          <button className='bg-contrast text-white font-bold p-3 rounded-md mt-4 text-lg'>Download CV</button>
+          <a href={resume}
+          download="Resume-Danish-Siddiqui"
+          target="_blank"
+          rel="noreferrer"
+          >
+            <button className='bg-contrast text-white font-bold p-3 rounded-md mt-4 text-lg'>Download CV</button>
+          </a>
 
         </div>
 

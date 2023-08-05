@@ -1,11 +1,12 @@
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Header, Footer } from './Components';
+import { Header, Footer, Loading } from './Components';
 import { About, Skills,  Contact, Home, Projects,Services } from "./Pages";
 import { useEffect } from 'react';
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { useState } from 'react';
 
 function App() {
 
@@ -14,9 +15,28 @@ function App() {
       once: true
     });
     AOS.refresh();
-  }, [])
+  }, []);
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      console.log('This will run after 1 second!')
+      setLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
+  <>
+  {
+    loading ? (
+    <>
+      <div>
+        <Loading/>
+      </div>
+    </>
+    ) : (
     <>
     <div className="container w-screen min-h-screen">
       <ToastContainer/>
@@ -30,7 +50,7 @@ function App() {
       </div>
 
       <div className="min-h-screen pt-20 flex flex-col gap-2 w-screen bg-bgPrimary">
-         
+        
         <About/>
         <Skills/>
         <Services/>
@@ -43,6 +63,12 @@ function App() {
 
     </div>
     </>
+    )
+  }
+  
+
+  
+  </>
   );
 }
 

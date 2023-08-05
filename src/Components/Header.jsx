@@ -12,6 +12,7 @@ export const Header = () => {
     <header className={`fixed ${navbar && "bg-bgPrimary"} bg-bgPrimary shadow-2xl z-40 py-4 md:px-20 px-10 w-screen flex items-center justify-between`}>
 
         <div className="logo text-white font-bold" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">    
+        {/* eslint-disable-next-line */}
             <a href="#">
             <img src={logo} className='md:w-[120px] w-[100px] cursor-pointer' alt="logo" />
             </a>

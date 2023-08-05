@@ -31,7 +31,7 @@ export const Projects = () => {
           {item.desc}
         </p>
 
-         <a href={item.link} target='_blank'>
+         <a href={item.link} target='_blank' rel='noreferrer'>
           <button className='bg-bgPrimary w-full md:py-3 py-2.5 rounded-lg mt-3 text-white md:text-xl text-lg cursor-pointer'>Demo</button>
         </a> 
 

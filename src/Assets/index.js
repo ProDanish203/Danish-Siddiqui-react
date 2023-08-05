@@ -40,7 +40,7 @@ import responsive from "./Images/services/responsive.png";
 import seo from "./Images/services/search-engine-optimization.png";
 import webDesign from "./Images/services/webDesign.png";
 
+import loader from "./Images/loader.gif";
 
-
-export { bg, me, aboutImg, contactImg, clock, portfolio, portfolioLandingPage, pyzon, reactEcom, rockPaperScissors, todoApp, summarizerDS, css, mongoDb, nodejs, html, js, bootstrap, firebase, git, github, jquery, redux, tailwind, nextjs, mysql, react, php, java, cpp, me2, responsive, seo, webDesign
+export { loader, bg, me, aboutImg, contactImg, clock, portfolio, portfolioLandingPage, pyzon, reactEcom, rockPaperScissors, todoApp, summarizerDS, css, mongoDb, nodejs, html, js, bootstrap, firebase, git, github, jquery, redux, tailwind, nextjs, mysql, react, php, java, cpp, me2, responsive, seo, webDesign
 }

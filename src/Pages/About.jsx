@@ -24,7 +24,7 @@ export const About = () => {
           <div className="sub-heading text-white font-semibold text-xl my-3 mt-5">Socials:</div>
 
           <div className="social-cards mt-5 flex items-center flex-wrap md:gap-4 gap-2">
-            
+            <a href="https://github.com/ProDanish203" target='_blank' rel='noreferrer'>
             <i 
             className="fab fa-github text-white md:text-2xl text-xl card w-12 text-center p-3 bg-bgSecondary rounded-xl shadow-xl hover:shadow-2xl cursor-pointer" 
             data-aos="fade-left"
@@ -32,6 +32,8 @@ export const About = () => {
             data-aos-duration="800"
             >
             </i>
+            </a>
+            <a href="https://www.linkedin.com/in/danish-siddiqui-53346a279" target='_blank' rel='noreferrer'>
 
             <i 
             className="fab fa-linkedin text-white w-12 text-center md:text-2xl text-xl card p-3 bg-bgSecondary rounded-xl shadow-xl hover:shadow-2xl cursor-pointer" 
@@ -40,7 +42,8 @@ export const About = () => {
             data-aos-duration="800"
             >
             </i>
-
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100036046420220&mibextid=ZbWKwL" target='_blank' rel='noreferrer'>
             <i 
             className="fab fa-facebook-f text-white w-12 text-center md:text-2xl text-xl card p-3 bg-bgSecondary rounded-xl shadow-xl hover:shadow-2xl cursor-pointer" 
             data-aos="fade-left"
@@ -48,7 +51,8 @@ export const About = () => {
             data-aos-duration="800"
             >
             </i>
-
+            </a>
+            <a href="https://www.instagram.com/doesnt.matter.o_o/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target='_blank' rel='noreferrer'>
             <i 
             className="fab fa-instagram text-white w-12 text-center md:text-2xl text-xl card p-3 bg-bgSecondary rounded-xl shadow-xl hover:shadow-2xl cursor-pointer" 
             data-aos="fade-left"
@@ -56,7 +60,9 @@ export const About = () => {
             data-aos-duration="800"
             >
             </i>
+            </a>
 
+            <a href="https://twitter.com/dewhehe_sh?t=7fs2p1eqBzdewdrod7MLVw&s=08" target='_blank' rel='noreferrer'>
             <i 
             className="fab fa-twitter text-white w-12 text-center md:text-2xl text-xl card p-3 bg-bgSecondary rounded-xl shadow-xl hover:shadow-2xl cursor-pointer" 
             data-aos="fade-left"
@@ -64,6 +70,7 @@ export const About = () => {
             data-aos-duration="800"
             >
             </i>
+            </a>
 
           </div>
 
